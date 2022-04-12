@@ -133,4 +133,64 @@
       <Name>News</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\galaxy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\astroreadingregister.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TydligVGNiva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\QuadraSpace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kingyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\astrologin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fatguy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\astroearth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\astrorocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\astrobasket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\astroearthSplash.png" />
+  </ItemGroup>
 </Project>

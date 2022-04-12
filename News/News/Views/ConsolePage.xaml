@@ -4,15 +4,18 @@
              xmlns:sys="clr-namespace:System;assembly=netstandard"
              x:Class="News.Views.ConsolePage"
              Title="Debug Console"
-             Padding="10,30,10,5">
+             Padding="10,30,10,5"
+             BackgroundImageSource="QuadraSpace.png"
+             BackgroundColor="Black">
     <StackLayout Padding="10" >
-        <Label Text="Simple Console Output" HorizontalOptions="Center" FontSize="24"/>
+
+        <Label Text="Simple Console Output" HorizontalOptions="Center" FontSize="24"  TextColor="Goldenrod" FontAttributes="Bold"/>
         <StackLayout Orientation="Horizontal" HeightRequest="50" HorizontalOptions="Center">
-            <Stepper x:Name="stepper" Minimum="0" Increment="1" VerticalOptions="Center"/>
-            <Label Text="{Binding Value}" BindingContext="{x:Reference stepper}" VerticalOptions="Center" />
+            <Stepper x:Name="stepper" Minimum="0" Increment="1" VerticalOptions="Center" BackgroundColor="Cornsilk" />
+            <Label Text="{Binding Value}" BindingContext="{x:Reference stepper}" VerticalOptions="Center" TextColor="Goldenrod" />
         </StackLayout>
         <StackLayout>
-            <Button Text="Run your Console program" Clicked="Button_Clicked" />
+            <Button Text="Run your Console program" Clicked="Button_Clicked" BackgroundColor="Cornsilk" TextColor="Goldenrod" FontAttributes="Bold" CornerRadius="10" />
             <ScrollView>
                 <Editor x:Name="myOutput" IsReadOnly="True" AutoSize="TextChanges"/>
             </ScrollView>

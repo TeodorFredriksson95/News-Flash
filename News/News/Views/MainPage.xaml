@@ -2,10 +2,47 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:News.Views" 
-             x:Class="News.Views.MainPage">
-  <!--Pages can be added as references or inline-->
+             x:Class="News.Views.MainPage"
+            x:Name="mainp">
+    <TabbedPage.BarTextColor>
+        <Color>goldenrod</Color>
+    </TabbedPage.BarTextColor>
+
+    <TabbedPage.BackgroundColor>
+        <Color>black</Color>
+    </TabbedPage.BackgroundColor>
+    
+    
+    <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <views:AboutPage/>
+        <views:ConsolePage/>
+        <views:SciencePage Title="Science"/>
+        <views:SciencePage Title="Entertainment"/>
+        <views:SciencePage Title="Business"/>
+        <views:SciencePage Title="Sports"/>
+        <views:SciencePage Title="Health"/>
+        <views:SciencePage Title="Technology"/>
+        <views:SciencePage Title="General"/>
+
+    </TabbedPage.Children>
+    
+    
+    <!--
+    Apologies Martin, this part of the tabbed page, aswell as the "NoLongerUsedViews" folder will be saved for learning reference
+    as a means to observe my own mistakes vs what i consider to be the correct solution. 
+    
     <TabbedPage.Children>
         <views:AboutPage />
         <views:ConsolePage />
+        <views:BusinessPage/>
+        <views:EntertainmentPage/>
+        <views:HealthPage/>
+        <views:SciencePage/>
+        <views:SportsPage/>
+        <views:GeneralPage/>
+        <views:TechnologyPage/>
     </TabbedPage.Children>
+    -->
+    
 </TabbedPage>

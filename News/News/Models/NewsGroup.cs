@@ -7,7 +7,7 @@ namespace News.Models
 {
     public enum NewsCategory
     {
-        business, entertainment, general, health, science, sports, technology
+        business, entertainment, general, health, science, sports, technology, categoryToThrow
     }
     public class NewsCacheKey
     {
@@ -51,6 +51,8 @@ namespace News.Models
         }
         public static NewsGroup Deserialize(string fname)
         {
+
+
             var _locker = new object();
             lock (_locker)
             {
@@ -62,6 +64,8 @@ namespace News.Models
 
                 return news;
             }
+
         }
     }
 }
+   

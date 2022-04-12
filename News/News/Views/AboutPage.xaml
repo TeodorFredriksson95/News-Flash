@@ -2,26 +2,246 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="News.Views.AboutPage"
-             Title="About News">
-
+             Title="About News"
+             BackgroundColor="#2e273e">
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Project Part B" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="News in Xamarin.Forms" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="This part of the project is about making a simple UI in to the console news service made in project part A using Tabs." 
-               FontSize="16" Padding="30,0,30,0"/>
-        <Label Text="Select a city and give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label Text="Have fun!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Martin Lenart"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+            
+    <AbsoluteLayout>
+
+                 
+    <Image x:Name="Galaxy"
+           IsVisible="false"
+                   Source="galaxy.png"
+                   Margin="-50"
+                   HorizontalOptions="End"
+                   AbsoluteLayout.LayoutBounds=".1,.2, 1, .6"
+                   AbsoluteLayout.LayoutFlags="All"/>
+        
+        <Image x:Name="Galaxy2"
+                   Source="QuadraSpace.png"
+               IsVisible="true"
+                   Margin="0"
+               Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds=".5,.5, 1, 1"
+                   AbsoluteLayout.LayoutFlags="All"/>
+     
+            <Image x:Name="AstroBubble"
+                   IsVisible="false"
+                   Source="TydligVGNiva.png" 
+                   AbsoluteLayout.LayoutBounds="1.2,0.05, .8, .18"
+                   AbsoluteLayout.LayoutFlags="All"/>
+
+
+            <Image x:Name="AstroMusic"
+               IsVisible="false"
+                   Source="astroreadingregister.png" 
+               Rotation="18"
+                   AbsoluteLayout.LayoutBounds="1.7,.4, .8, .35"
+                   AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="AstroLetsGo"
+               Source="astrologin.png"
+                IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".5,0.4, .2, .30"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarOne"
+               Source="starOne.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".9,0.2, .2, .10"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+            <Image x:Name="StarTwo"
+               Source="starTwo.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".8,0.45, .2, .07"
+               AbsoluteLayout.LayoutFlags="All"/>   
+        
+            <Image x:Name="StarThree"
+               Source="starThree.png"
+               IsVisible="false"
+               Rotation="-10"
+               AbsoluteLayout.LayoutBounds=".85,0.4, .2, .07"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarFour"
+               Source="starFour.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".7,0.3, .2, .05"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+            <Image x:Name="StarFive"
+               Source="starFive.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".7,0.8, .2, .08"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+            <Image x:Name="StarSix"
+               Source="starSix.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".75,0.58, .2, .08"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+
+            <Image x:Name="StarSeven"
+               Source="starSeven.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".99,0.72, .2, .08"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarEight"
+               Source="starEight.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".99,0.62, .3, .03"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarNine"
+               Source="starNine.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".99,0.57, .4, .05"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarTen"
+               Source="starThree.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".79,0.57, .4, .05"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+            <Image x:Name="StarEleven"
+               Source="starFour.png"
+               IsVisible="false"
+                   Rotation="30"
+               AbsoluteLayout.LayoutBounds=".79,0.17, .4, .05"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+            <Image x:Name="StarTwelve"
+               Source="starTwo.png"
+               IsVisible="false"
+                   Rotation="30"
+               AbsoluteLayout.LayoutBounds=".79,0.27, .5, .05"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarThirteen"
+               Source="starOne.png"
+               IsVisible="false"
+                   Rotation="30"
+               AbsoluteLayout.LayoutBounds=".79,0.32, .2, .05"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarFourteen"
+               Source="starThree.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".79,0.72, .1, .1"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="StarFifteen"
+               Source="starThree.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".39,0.92, 0, .1"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="kingRiseOne"
+               Source="kingyellow.png"
+               RotationX="-90"
+               AbsoluteLayout.LayoutBounds=".72,0.6, .4, .2"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="kingRiseTwo"
+               Source="kingyellow.png"
+               RotationX="-90"   
+               AbsoluteLayout.LayoutBounds=".87,0.6, .4, .2"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+            <Image x:Name="kingRiseThree"
+               Source="kingyellow.png"
+               RotationX="-90"
+               AbsoluteLayout.LayoutBounds="1.02,0.6, .4, .2"
+               AbsoluteLayout.LayoutFlags="All"/> 
+        
+            <Image x:Name="modernMan"
+               Source="fatguy.png"
+               IsVisible="false"
+               AbsoluteLayout.LayoutBounds=".25,0.6, .4, .6"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="movingImage"
+                   IsVisible="true"
+               Source="astrorocket.png"
+               AbsoluteLayout.LayoutBounds="-0.5,0.8, .4, .2"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Image x:Name="spinningGlobeImage"
+               IsVisible="false"
+               Source="astrobasket.png"
+               AbsoluteLayout.LayoutBounds=".1,.8, .2, .4"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds=".2,0.4, .4, .5" AbsoluteLayout.LayoutFlags="All" x:Name="FodderTextLabelOne" Text="{Binding StringFormat='Throughout history, mankind has gazed towards the stars..'}" TextColor="Goldenrod" FontSize="Medium"/>
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds="1,0.5, .4, .2" AbsoluteLayout.LayoutFlags="All" x:Name="FodderTextLabelTwo" Text="{Binding StringFormat='..before the rising of kings..'}" TextColor="Goldenrod" FontSize="Medium"/>
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds=".1,0.8, .2, .2" AbsoluteLayout.LayoutFlags="All" x:Name="FodderTextLabelThree" Text="{Binding StringFormat='..and the modern man'}" TextColor="Goldenrod" FontSize="Medium"/>
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds=".55,.2, .3, .6" AbsoluteLayout.LayoutFlags="All" x:Name="FodderTextLabelFour" Text="{Binding StringFormat='But before all'}" TextColor="Goldenrod" FontSize="50" FontAttributes="Bold,Italic"/>
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds=".8,.4, .7, .5" AbsoluteLayout.LayoutFlags="All" x:Name="FodderTextLabelFive" Text="{Binding StringFormat='One star shined the brightest'}" TextColor="Goldenrod" FontSize="50" FontAttributes="Bold,Italic"/>
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds=".1,.2, .7, .5" AbsoluteLayout.LayoutFlags="All" x:Name="FNameLabel" Text="Teodor" TextColor="Goldenrod" FontSize="80" FontAttributes="Bold,Italic"/>
+            <Label IsVisible="false"  AbsoluteLayout.LayoutBounds=".1,.5, .7, .5" AbsoluteLayout.LayoutFlags="All" x:Name="LNameLabel" Text="Fredriksson" TextColor="Goldenrod" FontSize="80" FontAttributes="Bold,Italic"/>
+
+
+
+
+            <StackLayout AbsoluteLayout.LayoutBounds=".5,.1, .5, .15"  AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Center">
+
+                <Label x:Name="WelcomeLabel" IsVisible="false" Text="Welcome Martin.." TextColor="Goldenrod" FontSize="50" FontAttributes="Bold,Italic"/>
+                <Label x:Name="WelcomeLabel2" IsVisible="false" Text="..to the 'About Page'" TextColor="Goldenrod" FontSize="50" FontAttributes="Bold,Italic"/>
+                    </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds=".5,.6, .7, .15"  AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Center">
+                <Label x:Name="WelcomeLabel3" IsVisible="false" Text="Are you ready to learn about the author?" TextColor="Goldenrod" FontSize="30" FontAttributes="Bold,Italic"/>
+                <Button x:Name="ButtonOne" IsVisible="false" Text="I'm ready!" BackgroundColor="Cornsilk" TextColor="Goldenrod" FontAttributes="Bold" Clicked="ButtonOne_Clicked"/>
+
+            </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds=".05,.2, .4, .01"  AbsoluteLayout.LayoutFlags="All" >
+
+                <Label x:Name="FodderTextLabelExample" IsVisible="false" FontSize="15" HorizontalOptions="Start" Text="{Binding StringFormat='Throughout history, mankind has gazed towards the stars..'}"  TextColor="Cornsilk"/>
+
+                <Label x:Name="QuestionLabel" FontSize="35" IsVisible="false" HorizontalOptions="Start" TextColor="Goldenrod" Text="..Eller?" FontAttributes="Bold,Italic"/>
+            </StackLayout>
+        </AbsoluteLayout>
+
     </StackLayout>
 
+
 </ContentPage>
+<!--
+    <StackLayout>
+        <Grid>
+         
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>c:\users\teo95\onedrive\skrivbord\newton\oop2\project part b\adopxf_projectb_news\news\news.uwp\assets\astroreadingregister.png
+c:\users\teo95\onedrive\skrivbord\newton\oop2\project part b\adopxf_projectb_news\news\news.uwp\assets\galaxy.png
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Frame  BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="20" Margin="0,0,-12,0"/>
+            <Frame  BackgroundColor="Black" Grid.Row="0" Grid.RowSpan="1" Grid.Column="1"/>
+            <Frame  BackgroundColor="Black" Grid.Row="0" Grid.RowSpan="1" Grid.Column="1"/>
+
+        </Grid>
+        <StackLayout>
+            
+
+            <BoxView AbsoluteLayout.LayoutBounds=".5,.5,.5,1000"
+                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                     BackgroundColor="Yellow"/>
+        </StackLayout>
+
+
+    </StackLayout>
+
+    -->

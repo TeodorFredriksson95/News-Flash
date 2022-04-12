@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="News.Views.GeneralPage"
+             Title="General" BackgroundImageSource="QuadraSpace.png" >
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Button x:Name="Refresh" Text="Refresh" Clicked="Refresh_Clicked" BackgroundColor="Cornsilk" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" WidthRequest="180" CornerRadius="10" FontAttributes="Bold" TextColor="Goldenrod"/>
+            <Button x:Name="RefreshAndThrowError" Text="Refresh and throw error" Clicked="RefreshAndThrowError_Clicked" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" WidthRequest="180" CornerRadius="10" BackgroundColor="Cornsilk" TextColor="Goldenrod" FontAttributes="Bold"/>
+            <Button x:Name="RefreshSlowConnection" Text="Slow Connection" Clicked="RefreshSlowConnection_Clicked" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" WidthRequest="180" CornerRadius="10" BackgroundColor="Cornsilk" TextColor="Goldenrod" FontAttributes="Bold"/>
+
+            <Grid>
+                <BoxView x:Name="boxViewLine" BackgroundColor="Goldenrod" HeightRequest="5"/>
+                <ActivityIndicator x:Name="activityIndicatorNewsLoading" IsRunning="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"  Color="Goldenrod" Scale="2" />
+            </Grid>
+            <ListView x:Name="CustomList" BackgroundColor="Transparent"  HasUnevenRows="True" ItemTapped="CustomList_ItemTapped">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5">
+                                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="AliceBlue">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+                                        <Image Source="{Binding UrlToImage}" WidthRequest="80" Aspect="AspectFill"/>
+                                        <StackLayout BackgroundColor="Transparent">
+                                            <Label VerticalOptions="Center" Text="{Binding DateTime, StringFormat='{0:dddd, MMMM dd, yyyy}'}" FontSize="15"/>
+                                            <Label VerticalOptions="Center" Text="{Binding Title}" FontSize="18" FontAttributes="Bold"/>
+                                            <Label VerticalOptions="Center" Text="{Binding Description}" FontSize="18" />
+
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

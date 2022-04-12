@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using News.Models;
-
 namespace News.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
