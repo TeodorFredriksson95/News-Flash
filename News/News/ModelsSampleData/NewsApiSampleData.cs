@@ -39,6 +39,8 @@ namespace News.ModelsSampleData
                     Stream stream = assembly.GetManifestResourceStream($"{type.Namespace}.{fname}");
 
                     //Deserialize the embedded resource
+
+                    //Try catch used for error handling when using sample data
                     try
                     {
 

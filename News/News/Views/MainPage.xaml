@@ -17,13 +17,13 @@
     <TabbedPage.Children>
         <views:AboutPage/>
         <views:ConsolePage/>
-        <views:SciencePage Title="Science"/>
-        <views:SciencePage Title="Entertainment"/>
-        <views:SciencePage Title="Business"/>
-        <views:SciencePage Title="Sports"/>
-        <views:SciencePage Title="Health"/>
-        <views:SciencePage Title="Technology"/>
-        <views:SciencePage Title="General"/>
+        <views:NewsPage Title="Science"/>
+        <views:NewsPage Title="Entertainment"/>
+        <views:NewsPage Title="Business"/>
+        <views:NewsPage Title="Sports"/>
+        <views:NewsPage Title="Health"/>
+        <views:NewsPage Title="Technology"/>
+        <views:NewsPage Title="General"/>
 
     </TabbedPage.Children>
     

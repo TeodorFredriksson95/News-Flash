@@ -27,7 +27,7 @@ namespace News.Models
         static string fname(string name)
         {
             var documentPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            documentPath = Path.Combine(documentPath, "AOOP2", "Project Part B");
+            documentPath = Path.Combine(documentPath, "AOOP3", "Project Part B NewsApp", "Cache");
             if (!Directory.Exists(documentPath)) Directory.CreateDirectory(documentPath);
             return Path.Combine(documentPath, name);
         }

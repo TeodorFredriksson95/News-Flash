@@ -50,7 +50,7 @@ namespace News.Views
 
             await Task.Run(() =>
             {
-                //Use the following code line to throw an exception and see modal exception handling
+                //Use the following code line to throw an exception and see modal exception handling 
                 //t3 = service.GetNewsAPISampleAsync(NewsCategory.categoryToThrow);
 
                 t3 = service.GetNewsAPISampleAsync(NewsCategory.business);

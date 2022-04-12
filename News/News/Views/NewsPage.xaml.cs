@@ -13,13 +13,13 @@ using News.Services;
 namespace News.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SciencePage : ContentPage
+    public partial class NewsPage : ContentPage
     {
         NewsService service;
         NewsGroup newsGroup;
         Task<NewsGroup> t3 = null, t4 = null;
 
-        public SciencePage()
+        public NewsPage()
         {
             InitializeComponent();
             service = new NewsService();
@@ -55,7 +55,9 @@ namespace News.Views
                 //Use the following code line to throw an exception and see modal exception handling
                 //t3 = service.GetNewsAPISampleAsync(NewsCategory.categoryToThrow);
 
-                t3 = service.GetNewsAPISampleAsync(category);
+                //Used for sample data
+                //t3 = service.GetNewsAPISampleAsync(category);
+                t3 = service.GetNewsAsync(category);
                 Task.WaitAll(t3);
 
 
@@ -77,7 +79,11 @@ namespace News.Views
         {
             await Task.Run(() =>
             {
-                t3 = service.GetNewsAPISampleAsync(NewsCategory.business);
+                NewsCategory category = (NewsCategory)Enum.Parse(typeof(NewsCategory), Title.ToLower());
+
+                //Used for sample data
+                //t3 = service.GetNewsAPISampleAsync(NewsCategory.business);
+                t3 = service.GetNewsAsync(category);
                 Task.WaitAll(t3);
 
 
@@ -107,9 +113,13 @@ namespace News.Views
 
                 await Task.Run(() =>
                 {
-                    t4 = service.GetNewsAPISampleAsync(NewsCategory.categoryToThrow);
+                    //Used for sample data
+                    //t4 = service.GetNewsAPISampleAsync(NewsCategory.categoryToThrow);
+
+                    t4 = service.GetNewsAsync(NewsCategory.categoryToThrow);
                     Task.WaitAll(t4);
 
+                    throw new Exception();
 
                 });
             }
@@ -123,7 +133,10 @@ namespace News.Views
                 newsGroup = t4.Result;
                 CustomList.ItemsSource = newsGroup.Articles;
             }
-
+            else
+            {
+                throw new Exception();
+            }
 
             activityIndicatorNewsLoading.HeightRequest = 0;
             boxViewLine.IsVisible = true;
@@ -143,7 +156,9 @@ namespace News.Views
 
             await Task.Run(() =>
             {
-                t3 = service.GetNewsAPISampleAsync(category);
+                //Used for sample data
+                // t3 = service.GetNewsAPISampleAsync(category); 
+                t3 = service.GetNewsAsync(category);
                 Task.WaitAll(t3);
 
 
